@@ -1,0 +1,212 @@
+.header {
+	background-color: #5b7989;
+	overflow: hidden;
+	border-radius: 10px 10px 0px 0px;
+}
+
+.logo {
+	float: left;
+	overflow: hidden;
+	line-height: 100px;
+	margin-left: 30px;
+	color: white;
+	font-size: 20px;
+	text-shadow: 2px 2px 2px #02010a;
+}
+
+.menu {
+	float: right;
+	line-height: 130px;
+	display: inline-block;
+	margin-right: 30px;
+}
+
+.menu a {
+	padding: 10px 20px;
+	font-size: 20px;
+	color: white;
+	text-decoration: none;
+}
+
+.centrado img {
+	margin:auto;
+	display: flex;
+	-webkit-box-shadow: 2px 2px  #02010a;
+	height: 300px;
+	padding-top: 20px;
+}
+
+.contenido1 {
+	background-color: #82c3a6;
+	height: 330px;
+	display: block;
+
+}
+
+body {
+	background-color: black;
+	font-family: 'Dancing Script', cursive;
+}
+
+#contenido {
+	max-width: 900px;
+ margin: auto;
+ display: block;
+ animation: mianimacion 2s;
+}
+
+#contenido2 {
+	background-color:  #d5c75f;
+	border: 1px;
+	flex-direction: row;
+	display: flex;
+	margin: auto;
+}
+
+#contenido2 div {
+	flex-direction: row;
+	display: flex;
+	margin: auto;
+}
+
+#contenido2 img {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+
+}
+
+#contenido2 a{
+	margin: auto;
+}
+
+.foto2 img:hover{
+	transform: rotate(10deg);
+	border: 2px;
+	-webkit-box-shadow: 2px 2px #82c3a6;
+	transition-duration: 1s;
+}
+
+.foto3 img:hover{
+	transform: translate(20px, -5px);
+	transition-duration: 1s;
+	-webkit-box-shadow: 2px 2px 2px #82c3a6;
+}
+
+.contenido3 div{
+	background-color:  #C6d5c5;
+	display: flex;
+	flex-direction: row;
+	height: 200px;
+	font-size: 22px;
+	margin: auto;
+}
+
+.contenido3{
+	border-radius: 0px 0px 10px 10px;
+}
+
+
+.contenedor {
+display: flex;
+flex-direction: row;
+margin: auto;
+padding: 10px 60px 10px 10px;
+}
+
+.contenedor img{
+	width: 200px;
+	margin-left: 60px
+}
+
+#contenidop{
+	display: flex;
+	flex-direction: column;
+	background-color: #d5c75f;
+	margin: auto;
+}
+
+.paisaje1 {
+	-webkit-filter: blur(10px); /* Chrome, Safari, Opera */
+	filter: blur(10px);
+}
+
+.paisaje2, .paisaje4, .paisaje6 {
+	-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+	filter: grayscale(100%);
+}
+
+.paisaje3 {
+	-webkit-filter: sepia(90%); /* Chrome, Safari, Opera */
+	filter: sepia(90%);
+}
+
+@media (max-width: 900px){
+  .logo {
+    width: 100%;
+    margin: auto;
+		text-align: center;
+  }
+  .menu{
+   width: 100%;
+  }
+  .menu {
+    margin: auto;
+		text-align: center;
+  }
+
+	.contenido3 div{
+		width: 100%;
+		margin: auto;
+		flex-direction: column;
+		display: flex;
+		text-align: center;
+	}
+
+	#contenidop div{
+		width: 100%;
+		margin: auto;
+		flex-direction: column;
+		display: flex;
+	 }
+
+	 #contenidop img{
+		 width: 70%;
+		 margin-top: 20px;
+		 align-items: center;
+		 margin: auto;
+		 padding: 10px;
+	 }
+
+	 #contenido2 a{
+	 	margin: auto;
+	 	text-align: center;
+	 }
+
+	 #contenido2 div{
+		 width: 100%;
+		 margin: auto;
+		 flex-direction: column;
+		 display: flex;
+	 }
+
+	 #contenido2 img{
+		 width: 80%;
+		 margin: auto;
+		 flex-direction: column;
+		 display: flex;
+		 align-items: center;
+	 }
+	}
+
+	@-webkit-keyframes mianimacion {
+		0% {
+			margin-top: 150%;
+		}
+		60% {
+			margin-top: -5%;
+		}
+		100% {
+			margin-top: 0%;
+		}
+	}
